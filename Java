@@ -155,3 +155,68 @@ class nolpgb{
      System.out.println(nama);   
     }
 }
+
+//Tugas 3 Pemprograman
+//Soal 1 Menghitung luas dan keliling persegi panjang
+
+import java.util.Scanner;
+
+public class keliling_luas_persegipanjangbosquh {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        int x, z, luas, keliling;
+
+        System.out.print("Masukan Panjang Persegi = ");
+        x=input.nextInt();
+        System.out.print("Masukan Lebar Persegi = ");
+        z=input.nextInt();
+        
+        luas=x*z;
+        System.out.println("Luas persegi Panjang = "+luas);
+
+        keliling=2*x+2*z;
+        System.out.println("Keliling persegi Panjang = "+keliling);
+
+    }  
+}
+
+
+//Tugas 3 Pemprograman
+//Soal 2 Menghitung luas Segitiga
+import java.util.Scanner;
+
+public class luas_segitiga {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        int x, z;
+        double luas;
+
+        System.out.print("Masukan Tinggi Segitiga = ");
+        x=input.nextInt();
+        System.out.print("Masukan Panjang Alas Segitiga = ");
+        z=input.nextInt();
+        
+        luas=0.5*x*z;
+        System.out.println("Luas Segitiga = "+luas);
+
+    }  
+}
+
+
+//Tugas 3 Pemprograman
+//Soal 3 celcius to fahreinheit
+import java.util.Scanner;
+  
+public class celciusto_fahreinheit {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        float celcius, fahreinheit;
+
+        System.out.print("Suhu dalam derajat celcius = ");
+        celcius = input.nextFloat();
+
+        fahreinheit = celcius*9/5+32;
+        System.out.println("Maka, suhu dalam derajat fahreinheit = "+fahreinheit);
+
+    }  
+}
