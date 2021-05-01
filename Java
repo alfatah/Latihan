@@ -264,7 +264,6 @@ public class PraktikumduaBelas {
 //Tugas 4 Pemprograman
 //Soal No 3
 import java.util.Scanner;
-
 public class x {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
@@ -287,4 +286,41 @@ public class x {
 
 
     }
+}
+
+//Tugas 5 Pemprograman
+//Soal No 1
+// Import package yang dibutuhkan
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class ClassBufferedReader {
+    public static void main(String[] args)throws IOException {
+       
+        // Deklarasi variabel panjang, lebar, luas dengan tipe data double
+        int panjang, lebar, luas, keliling;
+        
+        // Membuat objek inputstream
+        InputStreamReader isr = new InputStreamReader(System.in);
+        
+        // Membuat objek bufferedreader
+        BufferedReader br = new BufferedReader(isr);
+
+        // Meminta masukkan nilai untuk panjang dan lebar
+        System.out.print("Masukan Panjang Persegi = ");
+        panjang = Integer.parseInt(br.readLine());
+        
+        System.out.print("Masukan Lebar Persegi = ");
+        lebar = Integer.parseInt(br.readLine());
+        
+        // Menghitung luas persegi panjang
+        luas = panjang*lebar;
+        System.out.println("Luas Persegi Panjang = " + luas);
+        
+        // Menghitung keliling persegi panjang
+        keliling = 2*(panjang+lebar); 
+        System.out.println("Keliling Persegi Panjang = " + keliling);
+    }
+
 }
