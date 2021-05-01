@@ -198,7 +198,7 @@ public class luas_segitiga {
         System.out.print("Masukan Tinggi Segitiga = ");
         x=input.nextInt();
         System.out.print("Masukan Panjang Alas Segitiga = ");
-        z=input.nextInt();
+        z=input.nextInt()
         
         luas=0.5*x*z;
         System.out.println("Luas Segitiga = "+luas);
@@ -223,4 +223,68 @@ public class celciusto_fahreinheit {
         System.out.println("Maka, suhu dalam derajat fahreinheit = "+fahreinheit);
 
     }  
+}
+
+
+//Tugas 4 Pemprograman
+//Soal No 1
+import java.util.Scanner;
+public class PraktikumduaBelas {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        int hari;
+        String namaHari;
+
+        hari=input.nextInt();
+        
+        if (hari == 1) {
+            namaHari = "Senin";
+        } else if (hari == 2) {
+            namaHari = "Selasa";
+        } else if (hari == 3) {
+            namaHari = "Rabu";
+        } else if (hari == 4) {
+            namaHari = "Kamis";
+        } else if (hari == 5) {
+            namaHari = "Jumat";
+        } else if (hari == 6) {
+            namaHari = "Sabtu";
+        }   else {
+            namaHari = "Minggu";        
+        }
+        
+        if (hari > 7) {
+        namaHari = "Tidak ada";
+    }
+
+        System.out.println("Nama Hari = " + namaHari);
+
+    }
+}
+//Tugas 4 Pemprograman
+//Soal No 3
+import java.util.Scanner;
+
+public class x {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        int usia;
+        String kategori;
+
+        
+        System.out.print("Masukan Usia Anda = ");
+        usia= input.nextInt();
+
+        if (usia <= 16 ) {
+            kategori= "Anak-anak";
+        } else if (usia < 26) {
+            kategori = "Remaja";
+        } else {
+            kategori = "Dewasa";
+        } 
+        
+        System.out.println("Kategori Usia Anda adalah " + kategori);
+
+
+    }
 }
