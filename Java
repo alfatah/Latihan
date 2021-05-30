@@ -324,3 +324,41 @@ public class ClassBufferedReader {
     }
 
 }
+
+ 
+//Tugas 6 Pemprograman
+//Soal No 1
+import java.util.Scanner;
+public class Pemrograman {
+public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    String hasil = "";
+        // mengambil input
+        System.out.println("Masukan Jurusan Anda IPA = 1 / BAHASA = 2 = ");
+        Integer pilih = input.nextInt();
+        System.out.println("Masukan Nilai Anda = ");
+        Integer nilai = input.nextInt();
+        
+        // proses
+            if(pilih == 1){
+                if(nilai <= 82){
+                    hasil = "Anda Tidak Memenuhi Syarat Lulus";
+                } if (nilai <= 100){
+                    hasil = "Anda Telah Memenuhu Syarat Lulus";
+                }   
+            }
+
+            if(pilih == 2){
+                if(nilai <= 74){
+                    hasil = "Anda Tidak Berhak Medapat Program Beasiswa";
+                } if (nilai <= 100) {
+                    hasil = "Anda Berhak Mendapatkan Program Beasiswa";
+                }
+            }
+            
+            
+        // output
+
+        System.out.println("Hasil Anda Adalah = " + hasil);
+    }  
+}
