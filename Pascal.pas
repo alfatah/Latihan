@@ -12,6 +12,8 @@ writeln('Luas adalah = ',luas:2:2);
 readln;
 end.
 
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
 // Menghitung Luas Segitiga
 program MenghitungLuasSegitiga;
 var alas,tinggi,luas:real;
